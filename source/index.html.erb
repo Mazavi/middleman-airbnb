@@ -5,11 +5,15 @@ title: Le Wagon - Middleman
 <div id="home">
   <div class="home-content">
     <%= image_tag "logo.png", width: "200" %>
+    <h1>Today is <%= Date.today.strftime("%A, %b %d") %></h1>
     <p>
       Middleman is now running!
     </p>
     <p class="about">
-      <%= link_to "More about this template", "about.html" %>
+      <%= link_to "More about this template", "about.html", class: "btn btn-basic" %>
+    </p>
+    <p class="team">
+      <%= link_to "Team Avengers", "team.html", class: "btn btn-default" %>
     </p>
   </div>
 </div>
