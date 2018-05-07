@@ -1,0 +1,10 @@
+.home-content {
+  a {
+    border: none;
+    color: $red;
+    background: $light-gray;
+    &:hover {
+      color: darken($red, 10%);
+    }
+  }
+}
